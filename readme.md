@@ -1,6 +1,13 @@
 # Portfolio Workshop
-> Created by Mesbah Mowlavi
+> _Created by Mesbah Mowlavi_
 
+## 🎨 Design
+
+We'll be using this simple portfolio design during the today's workshop. It's a single-page portfolio with a dynamic project overlay:
+
+**[Link to Figma Project](https://www.figma.com/design/mb9xT4Ox636qRfHkcCRhOa/COGs-Workshop-Portfolio?node-id=0-1&t=B9HTTAigyGKZnDp9-1)**
+
+> Hint: If you'd like to modify the design, you can duplicate the Figma project to your own account and make changes there.
 
 ## 🚀 Project Structure
 

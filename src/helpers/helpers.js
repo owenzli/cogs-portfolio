@@ -8,3 +8,13 @@ export const getClickOffset = (event, ref) => {
     y: event.clientY - rect.top,
   };
 };
+
+export const createSignal = (name, fn) => {
+  window[name] = fn;
+};
+
+export const callSignal = (name, ...args) => {
+  if (name in window && typeof window[name] === "function") {
+    window[name](...args);
+  }
+};

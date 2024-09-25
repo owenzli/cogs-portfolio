@@ -3,6 +3,7 @@ import CloseButton from "./components/CloseButton";
 import ProjectDisplay from "./components/ProjectDisplay";
 import styles from "./ProjectsOverlay.module.css";
 import { ProjectList } from "./Projects";
+import { createSignal } from "../helpers/helpers";
 
 export default function ProjectsOverlay() {
   const [open, setOpen] = useState(false);
@@ -14,10 +15,10 @@ export default function ProjectsOverlay() {
       setOpen(true);
     });
 
-    window.projectOverlaySignal = (index) => {
+    createSignal("projectOverlay", (index) => {
       setOpen(true);
       setIndex(index);
-    };
+    });
   }, []);
 
   if (!open) return null;

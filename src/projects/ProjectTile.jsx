@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import ProjectIcon from "../assets/icons/project-xs.svg";
-import { getClickOffset, randomInt } from "../helpers/helpers";
+import { callSignal, getClickOffset, randomInt } from "../helpers/helpers";
 import styles from "./ProjectTile.module.css";
 
 export default function ProjectTile({
@@ -43,7 +43,7 @@ export default function ProjectTile({
   };
 
   const handleClick = () => {
-    window.projectOverlaySignal(projectOverlayIndex);
+    callSignal("projectOverlay", projectOverlayIndex);
   };
 
   return (

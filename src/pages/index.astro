@@ -1,5 +1,5 @@
 ---
-import selfie from "../assets/selfie.jpg";
+import Selfie from "../assets/selfie.jpeg";
 import MailIcon from "../assets/icons/mail.svg";
 import ProjectIcon from "../assets/icons/project.svg";
 import Layout from "../components/Layout.astro";
@@ -9,27 +9,28 @@ import CircleText from "../components/CircleText.astro";
 import ProjectsOverlay from "../projects/ProjectsOverlay";
 import ProjectTile from "../projects/ProjectTile";
 
-import UnifyTile from "../assets/tiles/unify.png";
-import DefineryTile from "../assets/tiles/definery.png";
+import Proj2Tile from "../assets/tiles/project2.png";
+import Proj3Tile from "../assets/tiles/project3.png";
 ---
 
 <Layout>
     <div class="page">
         <div class="row header">
             <div class="content">
-                <h1 class="title">Hey, I'm Mesbah</h1>
+                <h1 class="title">Hey, I'm James</h1>
                 <div class="subtitle">
-                    Software engineer specializing in creative and useful
-                    experiences&mdash;Based in Vancouver&mdash;Working at
-                    Spare&mdash;Available to freelance
+                    Junior designer curious about creative experiences and
+                    helpful products&mdash;Based in Vancouver&mdash;Studying at
+                    UBC&mdash;Available for intership
                 </div>
 
                 <div class="desktop-only">
                     <ProjectTile
-                        title="Unify"
-                        image={UnifyTile.src}
+                        title="Explore"
+                        image={Proj3Tile.src}
                         left="55%"
-                        projectOverlayIndex={0}
+                        width={250}
+                        projectOverlayIndex={1}
                         client:only
                     />
                 </div>
@@ -37,7 +38,7 @@ import DefineryTile from "../assets/tiles/definery.png";
 
             <div class="side-col">
                 <div class="selfie">
-                    <img src={selfie.src} alt="Mesbah Mowlavi" />
+                    <img src={Selfie.src} alt="James Baxster" />
                 </div>
             </div>
         </div>
@@ -45,21 +46,21 @@ import DefineryTile from "../assets/tiles/definery.png";
         <div class="row about">
             <div class="content">
                 <div class="about-message">
-                    I'm a Computer Engineer with 5+ years of experience in
-                    software development, creative thinking, and product
-                    leadership. I am passionate about creating responsive
-                    systems and engaging interfaces that help make the world a
-                    better place.
+                    I'm a User Experience Designer studying at the University of
+                    British Columbia (graduating 2026). I enjoy creating
+                    engaging visuals and bringing products to life. I am
+                    passionate about the environment, table tennis, fresh
+                    blackberries, and helping make the world a better place.
                 </div>
 
                 <div class="desktop-only">
                     <ProjectTile
-                        title="Definery"
-                        image={DefineryTile.src}
+                        title="Inner Peace"
+                        image={Proj2Tile.src}
                         left="10%"
                         top="60%"
-                        width={250}
-                        projectOverlayIndex={1}
+                        width={150}
+                        projectOverlayIndex={2}
                         client:only
                     />
                 </div>
@@ -78,7 +79,7 @@ import DefineryTile from "../assets/tiles/definery.png";
             </div>
         </div>
         <div class="copyright">
-            &copy; Mesbah Mowlavi<br />
+            &copy; James Baxster<br />
             Last updated Sept 2024
         </div>
     </div>
@@ -183,6 +184,7 @@ import DefineryTile from "../assets/tiles/definery.png";
             width: 100%;
             height: 100%;
             object-fit: cover;
+            max-height: 65vh;
         }
 
         .button-group {

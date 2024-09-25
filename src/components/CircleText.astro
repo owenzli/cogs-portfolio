@@ -20,9 +20,27 @@
 </svg>
 
 <style>
+    @keyframes turn_me_right_round {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
     svg {
+        animation-timing-function: linear;
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+        animation-name: turn_me_right_round;
+
         width: 60vw;
         height: 60vw;
+
+        position: fixed;
+        bottom: 100px;
+        right: -120px;
+
         font-family: "Inter", sans-serif;
     }
 
@@ -30,6 +48,9 @@
         svg {
             width: 400px;
             height: 400px;
+            position: fixed;
+            bottom: -180px;
+            right: -120px;
         }
     }
 </style>

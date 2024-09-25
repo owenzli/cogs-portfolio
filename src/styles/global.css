@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+    --light: #f3efe0;
+    --dark: #101012;
+    --primary: #cd3e27;
+    --primary-transparent: #cd3e2728;
+    --primary-dark: #9a2f1d;
+}
+
+::selection {
+    background: color-mix(in srgb, var(--primary) 40%, transparent 60%);
+}
+
+html body {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: -0.25px;
+    color: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+}

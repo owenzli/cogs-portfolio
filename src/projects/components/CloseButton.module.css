@@ -1,0 +1,13 @@
+.closeButton {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.closeButton:hover {
+    opacity: 1;
+}

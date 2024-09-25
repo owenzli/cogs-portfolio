@@ -1,0 +1,11 @@
+.desktop-only {
+    display: none;
+}
+
+@media (pointer: fine) {
+    @media (min-width: 600px) {
+        .desktop-only {
+            display: initial;
+        }
+    }
+}

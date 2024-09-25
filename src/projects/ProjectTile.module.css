@@ -1,0 +1,42 @@
+.container {
+    position: fixed;
+}
+
+.tile {
+    width: 400px;
+    animation: floatIn 2s ease-out;
+    transition: transform 0.5s;
+    cursor: grab;
+}
+
+.tile img {
+    width: 100%;
+}
+
+.tile:hover {
+    transform: rotate(5deg);
+}
+
+.tile:active {
+    cursor: grabbing;
+}
+
+.go {
+    text-align: right;
+}
+.go img {
+    padding: 16px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+@keyframes floatIn {
+    from {
+        opacity: 0;
+        margin-top: -50px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+}

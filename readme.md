@@ -1,5 +1,5 @@
 # Portfolio Workshop
-| Created by Mesbah Mowlavi
+> Created by Mesbah Mowlavi
 
 
 ## 🚀 Project Structure
@@ -40,7 +40,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [Astro documentation](https://docs.astro.build), and consider following their tutorial on how to [Build a Blog](https://docs.astro.build/en/tutorial/0-introduction/).
 
 ## Credits
 Project images thanks to these Dribbble artists:

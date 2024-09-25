@@ -41,3 +41,12 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Credits
+Project images thanks to these Dribbble artists:
+- https://dribbble.com/shots/24915249-Zolve-Smart-Assistant-Branding
+- https://dribbble.com/shots/24918143-Meditation-App
+- https://dribbble.com/shots/24920224-Cery-Photography-Landing-Page
+
+Stock images from Unsplash:
+- https://unsplash.com/photos/back-photo-of-woman-wearing-brown-parka-hoodie-and-green-backpack-on-snow-LspK43UdFo4
